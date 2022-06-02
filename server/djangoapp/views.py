@@ -86,9 +86,9 @@ def get_dealerships(request):
 # def get_dealer_details(request, dealer_id):
 # ...
 def get_dealer_details(request, id):
-    dealer_url     = "https://666fe905.eu-gb.apigw.appdomain.cloud/api/dealership"
-    postreview_url = "https://666fe905.eu-gb.apigw.appdomain.cloud/api/review"
-    getreview_url  = "https://666fe905.eu-gb.apigw.appdomain.cloud/api/review"
+    dealer_url     = "https://666fe905.eu-gb.apigw.appdomain.cloud/dealerships"
+    postreview_url = "https://666fe905.eu-gb.apigw.appdomain.cloud/postreviews"
+    getreview_url  = "https://666fe905.eu-gb.apigw.appdomain.cloud/getreviews"
     if request.method == "GET":
         context = {}
         dealer = get_dealer_by_id_from_cf(dealer_url, id=id)
@@ -101,9 +101,9 @@ def get_dealer_details(request, id):
 # Create a `add_review` view to submit a review
 # def add_review(request, dealer_id):
 def add_review(request, id):
-    dealer_url      = "https://666fe905.eu-gb.apigw.appdomain.cloud/api/dealership"
-    postreview_url  = "https://666fe905.eu-gb.apigw.appdomain.cloud/api/postreview"
-    getreview_url   = "https://666fe905.eu-gb.apigw.appdomain.cloud/api/getreview"
+    dealer_url      = "https://666fe905.eu-gb.apigw.appdomain.cloud/dealerships"
+    postreview_url  = "https://666fe905.eu-gb.apigw.appdomain.cloud/postreviews"
+    getreview_url   = "https://666fe905.eu-gb.apigw.appdomain.cloud/getreviews"
     context = {}
     dealer = get_dealer_by_id_from_cf(dealer_url, id=id)
     context["dealer"] = dealer
