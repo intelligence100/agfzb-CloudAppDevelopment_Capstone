@@ -77,7 +77,7 @@ def registration_request(request):
 def get_dealerships(request):
     if request.method == "GET":
         context = {}
-        url = "https://666fe905.eu-gb.apigw.appdomain.cloud/api/dealership"
+        url = "https://666fe905.eu-gb.apigw.appdomain.cloud/dealerships"
         dealerships = get_dealers_from_cf(url)
         context["dealership_list"] = dealerships
         return render(request, 'djangoapp/index.html', context)
