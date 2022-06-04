@@ -1,5 +1,5 @@
 // IBM Action, method=GET, node.js v12
-// API https://4ea3b251.us-south.apigw.appdomain.cloud/api (for node v16)
+// API https://eca74085.eu-gb.apigw.appdomain.cloud/api (for node v16)
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 const Cloudant = require('@cloudant/cloudant'); 
