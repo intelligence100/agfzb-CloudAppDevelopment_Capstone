@@ -1,5 +1,5 @@
 // IBM Action, method=GET, node.js v16
-// API https://4ea3b251.us-south.apigw.appdomain.cloud/get-dealership
+// API https://eca74085.eu-gb.apigw.appdomain.cloud/dealerships
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 function main(params) {
