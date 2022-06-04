@@ -1,5 +1,5 @@
 # IBM Action, method=GET, Python 3.9
-# API https://4ea3b251.us-south.apigw.appdomain.cloud/getreview/getreview
+# API https://eca74085.eu-gb.apigw.appdomain.cloud/getreview/getreview
 # Params
 # {
 #     "id": 15
