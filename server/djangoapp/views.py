@@ -87,7 +87,7 @@ def get_dealerships(request):
 # ...
 def get_dealer_details(request, id):
     dealer_url     = "https://eca74085.eu-gb.apigw.appdomain.cloud/dealerships/dealerships"
-#   postreview_url = "https://eca74085.eu-gb.apigw.appdomain.cloud/postreviews/postreviews"
+    postreview_url = "https://eca74085.eu-gb.apigw.appdomain.cloud/postreviews/postreviews"
     getreview_url  = "https://eca74085.eu-gb.apigw.appdomain.cloud/getreviews/getreviews"
     if request.method == "GET":
         context = {}
@@ -103,7 +103,7 @@ def get_dealer_details(request, id):
 def add_review(request, id):
     dealer_url      = "https://eca74085.eu-gb.apigw.appdomain.cloud/dealerships/dealerships"
     postreview_url  = "https://eca74085.eu-gb.apigw.appdomain.cloud/postreviews/postreviews"
-#   getreview_url   = "https://eca74085.eu-gb.apigw.appdomain.cloud/getreviews/getreviews"
+    getreview_url   = "https://eca74085.eu-gb.apigw.appdomain.cloud/getreviews/getreviews"
     context = {}
     dealer = get_dealer_by_id_from_cf(dealer_url, id=id)
     context["dealer"] = dealer
